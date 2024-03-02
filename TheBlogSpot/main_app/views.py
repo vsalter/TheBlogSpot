@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 # Create your views here.
@@ -23,3 +23,13 @@ class PostCreate(CreateView):
     model = Post
     fields = '__all__'
     success_url = '/blog/'
+
+
+class PostUpdate(UpdateView):
+  model = Post
+  fields = '__all__'
+  success_url = '/blog/'
+
+class PostDelete(DeleteView):
+  model = Post
+  success_url = '/blog/'
