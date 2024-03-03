@@ -4,6 +4,10 @@ body {
     flex-direction: column;
 }
 
+#navHeader {
+    background-color: black;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -11,4 +15,5 @@ main {
 footer.page-footer {
     padding-top: 0;
     text-align: right;
+    background-color: black;
 }
